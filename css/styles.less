@@ -1,1 +1,653 @@
-.wrapper {}
+img {
+  max-width: 100%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.wrapper {
+  max-width: 1400px;
+  margin: 0 auto;
+  box-sizing: border-box;
+
+  * {
+    font-family: Source Sans Pro;
+    color: #333333;
+  }
+
+  header {
+    @media screen and (max-width:414px) {
+      padding: 2.7% 0;
+    }
+    // display: flex;
+    padding: 2% 10.5%;
+    overflow: hidden;
+
+    img {
+      @media screen and (max-width: 414px) {
+        margin: 4% 0 0 5%;
+      }
+    }
+
+    a {
+      @media screen and (max-width: 414px) {
+        width: 23.6%;
+        padding: 1.8% 0;
+        font-size: 18px;
+        text-align: center;
+        margin: 0 5% 0 0;
+      }
+      float: right;
+    }
+  }
+
+  footer {
+    @media screen and (max-width: 1400px) {
+      font-size: 1.5vw;
+    }
+    @media screen and (max-width:414px) {
+      font-size: 16px;
+      line-height: 22px;
+      padding: 16% 0;
+    }
+    background: #0E395D;
+    color: #fff;
+    text-align: center;
+    padding: 5% 0;
+    font-size: 20px;
+  }
+
+  div {
+    &.top {
+      position: relative;
+
+      img {
+        &[src="img/header-m.png"] {
+          @media screen and (max-width:414px) {
+            width: 100%;
+          }
+        }
+
+        &.credit-card {
+          @media screen and (max-width:414px) {
+            top: 54%;
+            left: 7%;
+            width: 55%;
+          }
+          @media screen and (max-width: 376px) {
+            top: 60%;
+          }
+          @media screen and (max-width:321px) {
+            top: 67%;
+          }
+          position: absolute;
+          top: 9%;
+          right: 3%;
+          width: 30%;
+        }
+      }
+
+      .content {
+        @media screen and (max-width: 414px) {
+          left: 6%;
+          top: 5%;
+        }
+        position: absolute;
+        left: 10.5%;
+        top: 10%;
+
+        h2 {
+          @media screen and (max-width: 1400px) {
+            font-size: 3.5vw;
+            line-height: 4vw;
+          }
+          @media screen and (max-width: 414px) {
+            font-size: 36px;
+            line-height: 41px;
+          }
+          color: #fff;
+          font-size: 50px;
+          margin: 0;
+          line-height: 57px;
+        }
+
+        h3 {
+          @media screen and (max-width: 1400px) {
+            font-size: 2vw;
+          }
+          @media screen and (max-width: 414px) {
+            font-size: 24px;
+            line-height: 33px;
+          }
+          @media screen and (max-width:321px) {
+            font-size: 23px;
+          }
+          color: #fff;
+          font-size: 27px;
+          font-weight: normal;
+          margin: 3.5% 0 0;
+        }
+
+        p {
+          @media screen and (max-width:1400px) {
+            font-size: 1.4vw;
+          }
+          @media screen and (max-width: 414px) {
+            font-size: 16px;
+            line-height: 22px;
+          }
+          @media screen and (max-width:321px) {
+            font-size: 15px;
+          }
+          color: #fff;
+          font-size: 20px;
+          margin: 2.5% 0 0;
+        }
+
+        img {
+          margin: 3.8% 0 0;
+        }
+
+        a {
+          @media screen and (max-width: 414px) {
+            margin: 59% 0 0;
+          }
+          display: inline-block;
+          margin: 7% 0 0;
+          padding: 1.3% 2.8%;
+        }
+      }
+    }
+
+    &.middle {
+      @media screen and (max-width:414px) {
+        padding: 6%;
+      }
+      padding: 7.5% 10% 0;
+
+      h2 {
+        @media screen and (max-width: 1400px) {
+          font-size: 3.4vw;
+        }
+        @media screen and (max-width:414px) {
+          font-size: 30px;
+          line-height: 39px;
+          text-align: left;
+        }
+        @media screen and (max-width:321px) {
+          font-size: 29px;
+        }
+        text-align: center;
+        font-size: 47px;
+        margin: 0;
+        color: #0E395D;
+      }
+
+      h3 {
+        @media screen and (max-width:1400px) {
+          font-size: 2.8vw;
+        }
+        @media screen and (max-width: 414px) {
+          font-size: 30px;
+          line-height: 39px;
+        }
+        @media screen and (max-width:321px) {
+          font-size: 28px;
+        }
+        font-size: 39px;
+        text-align: left;
+        padding: 0;
+        margin: 0 0 2%;
+        color: #0E395D;
+      }
+
+      ul {
+        @media screen and (max-width: 414px) {
+          column-count: 1;
+          column-gap: 0;
+          margin: 5% 0 0;
+          width: 100%;
+          padding: 0 0 0 10%;
+        }
+        list-style-image: url("../img/check-mark.png");
+        margin: 4% auto 8%;
+        padding: 0;
+        width: 87%;
+        column-count: 2;
+        column-gap: 30%;
+
+        li {
+          @media screen and (max-width: 1400px) {
+            font-size: 2.7vw;
+          }
+          @media screen and (max-width: 414px) {
+            font-size: 22px;
+          }
+          @media screen and (max-width:321px) {
+            font-size: 21px;
+          }
+          font-size: 37px;
+          margin: 0 0 10%;
+          white-space: nowrap;
+        }
+      }
+
+      p {
+        @media screen and (max-width: 1400px) {
+          font-size: 1.7vw;
+        }
+        @media screen and (max-width: 414px) {
+          font-size: 18px;
+          line-height: 25px;
+        }
+        @media screen and (max-width:414px) {
+          font-size: 15px;
+        }
+        margin: 3% 0 0;
+        font-size: 25px;
+      }
+
+      .btn {
+        @media screen and (max-width: 414px) {
+          margin: 8% 0 0;
+        }
+        margin: 2.5% 0 0;
+        display: inline-block;
+      }
+    }
+
+    &.steps {
+      text-align: center;
+      padding: 7.8% 0 5%;
+      margin: 7% 0 0;
+      background: #E9F9FD;
+
+      h2 {
+        @media screen and (max-width:1400px) {
+          font-size: 3.4vw;
+        }
+        @media screen and (max-width: 414px) {
+          font-size: 36px;
+          line-height: 41px;
+        }
+        text-align: center;
+        font-size: 47px;
+        margin: 0;
+        color: #0E395D;
+      }
+
+      img {
+        @media screen and (max-width: 414px) {
+          width: 14%;
+          margin: 6% auto !important;
+        }
+        display: block;
+        width: 3.8%;
+
+        &.first {
+          margin: 6% auto 1%;
+        }
+
+        &.second {
+          margin: 0.9% auto 0.5%;
+        }
+
+        &.third {
+          margin: 1.1% auto 1%;
+        }
+
+        &.fourth {
+          margin: 1.4% auto 1%;
+        }
+
+        &.fifth {
+          margin: 1.1% auto 1%;
+        }
+      }
+
+      p {
+        @media screen and (max-width: 1400px) {
+          font-size: 2.2vw;
+        }
+        @media screen and (max-width:414px) {
+          font-size: 22px;
+          line-height: 28px;
+        }
+        font-size: 30px;
+        margin: 0;
+      }
+
+      .btn {
+        @media screen and (max-width:414px) {
+          margin: 10% 0;
+        }
+        display: inline-block;
+        margin: 5% 0 0;
+      }
+    }
+
+    &.the-form {
+      @media screen and (max-width:414px) {
+        padding: 5% 6%;
+      }
+      text-align: center;
+      padding: 3% 10% 5%;
+
+      h2 {
+        @media screen and (max-width:1400px) {
+          font-size: 3.4vw;
+        }
+        @media screen and (max-width:414px) {
+          font-size: 30px;
+          line-height: 39px;
+        }
+        text-align: center;
+        font-size: 47px;
+        margin: 0;
+        color: #0E395D;
+      }
+
+      p {
+        @media screen and (max-width:1400px) {
+          font-size: 1.5vw;
+        }
+        @media screen and (max-width:414px) {
+          font-size: 16px;
+          line-height: 22px;
+        }
+        margin: 2% 0 4%;
+        font-size: 20px;
+      }
+
+      form {
+        .top-part {
+          @media screen and (max-width:414px) {
+            padding: 0;
+          }
+          display: flex;
+          flex-wrap: wrap;
+          padding: 0 7%;
+
+          h3 {
+            @media screen and (max-width:1400px) {
+              font-size: 1.5vw;
+            }
+            @media screen and (max-width:414px) {
+              font-size: 18px;
+              line-height: 25px;
+              text-align: left;
+              margin: 0;
+            }
+            margin: 1% 0 0 4%;
+            font-size: 20px;
+          }
+
+          div {
+            @media screen and (max-width:414px) {
+              flex-basis: 100%;
+            }
+            flex-basis: 50%;
+            margin: 0 0 5.5%;
+
+            &.sky-card,
+            &.ssn {
+              flex-basis: 100%;
+
+              label {
+                padding: 0 0 0 4%;
+                margin: 0 0 1%;
+              }
+
+              input {
+                @media screen and (max-width:1400px) {
+                  font-size: 1.5vw;
+                }
+                @media screen and (max-width:414px) {
+                  width: 92%;
+                  padding: 3.3%;
+                  margin: 0;
+                  font-size: 14px;
+                  box-sizing: content-box;
+                }
+                padding: 1.5% 1%;
+                margin: 0 0 0 4%;
+                width: 96%;
+                box-sizing: border-box;
+                font-size: 20px;
+              }
+            }
+
+            label {
+              @media screen and (max-width:1400px) {
+                font-size: 1.5vw;
+              }
+              @media screen and (max-width:414px) {
+                display: none;
+              }
+              display: block;
+              text-align: left;
+              font-size: 20px;
+              padding: 0 0 0 8%;
+              margin: 0 0 3%;
+            }
+
+            input {
+              @media screen and (max-width:414px) {
+                padding: 3.3%;
+                width: 92%;
+                border-radius: 4px;
+                margin: 0;
+                font-size: 14px;
+              }
+              display: block;
+              margin: 0 0 0 8%;
+              padding: 2.7%;
+              width: 86%;
+              border-radius: 6px;
+              border-color: #1C75BB;
+              border-style: solid;
+            }
+          }
+        }
+
+        .legal {
+          overflow: auto;
+          margin: 4.5% auto 3%;
+          height: 432px;
+          padding: 5%;
+          border: 1px solid black;
+
+          img {
+            max-width: 100%;
+            width: 100%;
+          }
+        }
+
+        .print-text {
+          @media screen and (max-width: 1400px) {
+            font-size: 1.8vw;
+          }
+          @media screen and (max-width:414px) {
+            font-size: 18px;
+            line-height: 25px;
+            margin: 10% 0;
+          }
+          text-align: left;
+          display: block;
+          font-size: 25px;
+          font-weight: bold;
+          color: #1C75BB;
+        }
+
+        .terms {
+          margin: 3.3% 0 0;
+          text-align: left;
+
+          input {
+            &[type="checkbox"] {
+              display: inline-block;
+              margin: 0 1% 0 0;
+              height: 20px;
+              width: 20px;
+            }
+
+            &[type="submit"] {
+              @media screen and (max-width:414px) {
+                margin: 9% auto;
+                display: block;
+              }
+              border: none;
+            }
+          }
+
+          span {
+            @media screen and (max-width: 1400px) {
+              font-size: 1.6vw;
+            }
+            @media screen and (max-width:414px) {
+              font-size: 19px;
+              line-height: 28px;
+            }
+            font-weight: bold;
+            font-size: 22px;
+          }
+
+          p {
+            @media screen and (max-width:1400px) {
+              font-size: 1.3vw;
+            }
+            @media screen and (max-width:414px) {
+              font-size: 18px;
+              line-height: 23px;
+              margin: 7% 0 0;
+            }
+            padding: 0 0 0 3.5%;
+            font-size: 19px;
+
+            a {
+              font-weight: bold;
+              color: #1C75BB;
+            }
+          }
+        }
+      }
+    }
+
+    &.faqs {
+      background: #1C75BB;
+      color: #fff;
+      padding: 4.5% 10.5% 0;
+
+      h2 {
+        @media screen and (max-width: 1400px) {
+          font-size: 2.3vw;
+        }
+        @media screen and (max-width:414px) {
+          font-size: 24px;
+          line-height: 31px;
+        }
+        margin: 0;
+        font-size: 33px;
+        color: #fff;
+      }
+
+      ul {
+        list-style-image: url("../img/faq-plus.png");
+        margin: 0;
+        padding: 0 0 0 1%;
+
+        li {
+          border-bottom: 1px solid;
+          padding: 1%;
+          color: #fff;
+
+          &:last-of-type {
+            border: none;
+          }
+
+          &.minus {
+            list-style-image: url("../img/faq-minus.png");
+          }
+
+          h3 {
+            @media screen and (max-width:1400px) {
+              font-size: 1.4vw;
+            }
+            @media screen and (max-width:414px) {
+              font-size: 16px;
+              line-height: 22px;
+            }
+            color: #fff;
+          }
+
+          div {
+            p {
+              @media screen and (max-width:1400px) {
+                font-size: 1.1vw;
+              }
+              @media screen and (max-width:414px) {
+                font-size: 14px;
+                line-height: 19px;
+              }
+              color: #fff;
+            }
+
+            ul {
+              list-style-image: none;
+              list-style-type: disc;
+
+              li {
+                @media screen and (max-width:1400px) {
+                  font-size: 1.2vw;
+                }
+                @media screen and (max-width:414px) {
+                  font-size: 14px;
+                  line-height: 19px;
+                }
+                border: none;
+                padding: 0;
+                color: #fff;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.btn {
+  @media screen and (max-width: 1400px) {
+    font-size: 1.7vw;
+  }
+  @media screen and (max-width: 414px) {
+    width: 41.3%;
+    padding: 3.5% 0 !important;
+    text-align: center;
+    font-size: 18px;
+    line-height: 18px;
+  }
+  text-decoration: none;
+  background: linear-gradient(#38B650, #25A13D);
+  border-radius: 6px;
+  padding: 0.8% 1.7%;
+  color: #fff;
+  text-transform: capitalize;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.desktop {
+  @media screen and (max-width:414px) {
+    display: none;
+  }
+}
+
+.mobile {
+  @media screen and (max-width: 414px) {
+    display: inline-block;
+  }
+  display: none;
+}
