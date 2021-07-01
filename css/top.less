@@ -1,0 +1,100 @@
+.top {
+  position: relative;
+
+  img {
+    &[src="img/header-m.png"] {
+      @media screen and (max-width:414px) {
+        width: 100%;
+      }
+    }
+
+    &.credit-card {
+      @media screen and (max-width:414px) {
+        top: 54%;
+        left: 7%;
+        width: 55%;
+      }
+      @media screen and (max-width: 376px) {
+        top: 60%;
+      }
+      @media screen and (max-width:321px) {
+        top: 67%;
+      }
+      position: absolute;
+      top: 9%;
+      right: 3%;
+      width: 30%;
+    }
+  }
+
+  .content {
+    @media screen and (max-width: 414px) {
+      left: 6%;
+      top: 5%;
+    }
+    position: absolute;
+    left: 10.5%;
+    top: 10%;
+
+    h2 {
+      @media screen and (max-width: 1400px) {
+        font-size: 3.5vw;
+        line-height: 4vw;
+      }
+      @media screen and (max-width: 414px) {
+        font-size: 36px;
+        line-height: 41px;
+      }
+      color: #fff;
+      font-size: 50px;
+      margin: 0;
+      line-height: 57px;
+    }
+
+    h3 {
+      @media screen and (max-width: 1400px) {
+        font-size: 2vw;
+      }
+      @media screen and (max-width: 414px) {
+        font-size: 24px;
+        line-height: 33px;
+      }
+      @media screen and (max-width:321px) {
+        font-size: 23px;
+      }
+      color: #fff;
+      font-size: 27px;
+      font-weight: normal;
+      margin: 3.5% 0 0;
+    }
+
+    p {
+      @media screen and (max-width:1400px) {
+        font-size: 1.4vw;
+      }
+      @media screen and (max-width: 414px) {
+        font-size: 16px;
+        line-height: 22px;
+      }
+      @media screen and (max-width:321px) {
+        font-size: 15px;
+      }
+      color: #fff;
+      font-size: 20px;
+      margin: 2.5% 0 0;
+    }
+
+    img {
+      margin: 3.8% 0 0;
+    }
+
+    a {
+      @media screen and (max-width: 414px) {
+        margin: 59% 0 0;
+      }
+      display: inline-block;
+      margin: 7% 0 0;
+      padding: 1.3% 2.8%;
+    }
+  }
+}

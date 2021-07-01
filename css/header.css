@@ -1,0 +1,26 @@
+header {
+  padding: 2% 10.5%;
+  overflow: hidden;
+}
+@media screen and (max-width: 414px) {
+  header {
+    padding: 2.7% 0;
+  }
+}
+@media screen and (max-width: 414px) {
+  header img {
+    margin: 4% 0 0 5%;
+  }
+}
+header a {
+  float: right;
+}
+@media screen and (max-width: 414px) {
+  header a {
+    width: 23.6%;
+    padding: 1.8% 0;
+    font-size: 18px;
+    text-align: center;
+    margin: 0 5% 0 0;
+  }
+}

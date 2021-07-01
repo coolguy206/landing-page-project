@@ -1,0 +1,206 @@
+.the-form {
+  @media screen and (max-width:414px) {
+    padding: 5% 6%;
+  }
+  text-align: center;
+  padding: 3% 10% 5%;
+
+  h2 {
+    @media screen and (max-width:1400px) {
+      font-size: 3.4vw;
+    }
+    @media screen and (max-width:414px) {
+      font-size: 30px;
+      line-height: 39px;
+    }
+    text-align: center;
+    font-size: 47px;
+    margin: 0;
+    color: #0E395D;
+  }
+
+  p {
+    @media screen and (max-width:1400px) {
+      font-size: 1.5vw;
+    }
+    @media screen and (max-width:414px) {
+      font-size: 16px;
+      line-height: 22px;
+    }
+    margin: 2% 0 4%;
+    font-size: 20px;
+  }
+
+  form {
+    .top-part {
+      @media screen and (max-width:414px) {
+        padding: 0;
+      }
+      display: flex;
+      flex-wrap: wrap;
+      padding: 0 7%;
+
+      h3 {
+        @media screen and (max-width:1400px) {
+          font-size: 1.5vw;
+        }
+        @media screen and (max-width:414px) {
+          font-size: 18px;
+          line-height: 25px;
+          text-align: left;
+          margin: 0;
+        }
+        margin: 1% 0 0 4%;
+        font-size: 20px;
+      }
+
+      div {
+        @media screen and (max-width:414px) {
+          flex-basis: 100%;
+        }
+        flex-basis: 50%;
+        margin: 0 0 5.5%;
+
+        &.sky-card,
+        &.ssn {
+          flex-basis: 100%;
+
+          label {
+            padding: 0 0 0 4%;
+            margin: 0 0 1%;
+          }
+
+          input {
+            @media screen and (max-width:1400px) {
+              font-size: 1.5vw;
+            }
+            @media screen and (max-width:414px) {
+              width: 92%;
+              padding: 3.3%;
+              margin: 0;
+              font-size: 14px;
+              box-sizing: content-box;
+            }
+            padding: 1.5% 1%;
+            margin: 0 0 0 4%;
+            width: 96%;
+            box-sizing: border-box;
+            font-size: 20px;
+          }
+        }
+
+        label {
+          @media screen and (max-width:1400px) {
+            font-size: 1.5vw;
+          }
+          @media screen and (max-width:414px) {
+            display: none;
+          }
+          display: block;
+          text-align: left;
+          font-size: 20px;
+          padding: 0 0 0 8%;
+          margin: 0 0 3%;
+        }
+
+        input {
+          @media screen and (max-width:414px) {
+            padding: 3.3%;
+            width: 92%;
+            border-radius: 4px;
+            margin: 0;
+            font-size: 14px;
+          }
+          display: block;
+          margin: 0 0 0 8%;
+          padding: 2.7%;
+          width: 86%;
+          border-radius: 6px;
+          border-color: #1C75BB;
+          border-style: solid;
+        }
+      }
+    }
+
+    .legal {
+      overflow: auto;
+      margin: 4.5% auto 3%;
+      height: 432px;
+      padding: 5%;
+      border: 1px solid black;
+
+      img {
+        max-width: 100%;
+        width: 100%;
+      }
+    }
+
+    .print-text {
+      @media screen and (max-width: 1400px) {
+        font-size: 1.8vw;
+      }
+      @media screen and (max-width:414px) {
+        font-size: 18px;
+        line-height: 25px;
+        margin: 10% 0;
+      }
+      text-align: left;
+      display: block;
+      font-size: 25px;
+      font-weight: bold;
+      color: #1C75BB;
+    }
+
+    .terms {
+      margin: 3.3% 0 0;
+      text-align: left;
+
+      input {
+        &[type="checkbox"] {
+          display: inline-block;
+          margin: 0 1% 0 0;
+          height: 20px;
+          width: 20px;
+        }
+
+        &[type="submit"] {
+          @media screen and (max-width:414px) {
+            margin: 9% auto;
+            display: block;
+          }
+          border: none;
+        }
+      }
+
+      span {
+        @media screen and (max-width: 1400px) {
+          font-size: 1.6vw;
+        }
+        @media screen and (max-width:414px) {
+          font-size: 19px;
+          line-height: 28px;
+        }
+        font-weight: bold;
+        font-size: 22px;
+      }
+
+      p {
+        @media screen and (max-width:1400px) {
+          font-size: 1.3vw;
+        }
+        @media screen and (max-width:414px) {
+          font-size: 18px;
+          line-height: 23px;
+          margin: 7% 0 0;
+        }
+        padding: 0 0 0 3.5%;
+        font-size: 19px;
+
+        a {
+          font-weight: bold;
+          color: #1C75BB;
+        }
+      }
+    }
+  }
+}
