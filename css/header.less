@@ -23,3 +23,22 @@ header {
     float: right;
   }
 }
+
+.sticky {
+  @media screen and (max-width: 1400px) {
+    width: 101%;
+    padding: 2% 10.5%;
+  }
+  @media screen and (max-width: 414px) {
+    padding: 2.7% 0;
+  }
+  position: fixed;
+  top: 0;
+  z-index: 9998;
+  background: #fff;
+  max-width: 1400px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 1400px;
+  padding: 1.1% 5.8%;
+}

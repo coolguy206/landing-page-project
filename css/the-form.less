@@ -85,7 +85,7 @@
             margin: 0 0 0 4%;
             width: 96%;
             box-sizing: border-box;
-            font-size: 20px;
+            // font-size: 20px;
           }
         }
 
@@ -104,12 +104,16 @@
         }
 
         input {
+          @media screen and (max-width: 1400px) {
+            font-size: 1.3vw;
+          }
           @media screen and (max-width:414px) {
             padding: 3.3%;
-            width: 92%;
+            // width: 92%;
             border-radius: 4px;
             margin: 0;
             font-size: 14px;
+            width: 100%;
           }
           display: block;
           margin: 0 0 0 8%;
@@ -118,6 +122,11 @@
           border-radius: 6px;
           border-color: #1C75BB;
           border-style: solid;
+          font-size: 18px;
+
+          &:focus {
+            outline: 0;
+          }
         }
       }
     }
@@ -203,4 +212,27 @@
       }
     }
   }
+}
+
+.error-input {
+  border-color: #DF2A4A !important;
+  background: url("../img/error-mark.svg") no-repeat 95% 50%;
+}
+
+.error-msg {
+  @media screen and (max-width:1400px) {
+    font-size: 0.9vw !important;
+    line-height: 1.1vw;
+  }
+  @media screen and (max-width: 414px) {
+    font-size: 10px !important;
+    line-height: 12.8px !important;
+    padding: 0;
+    margin: 2% 0 0 !important;
+  }
+  color: #DF2A4A;
+  font-size: 12px !important;
+  line-height: 15.36px;
+  text-align: left;
+  padding: 0 0 0 8%;
 }

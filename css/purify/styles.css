@@ -1,3 +1,9 @@
+* {
+  font-family: Source Sans Pro;
+  color: #333333;
+  box-sizing: border-box;
+}
+
 img {
   max-width: 100%;
 }
@@ -7,15 +13,84 @@ body {
   padding: 0;
 }
 
+.overlay {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background: #000;
+  z-index: 9999;
+  opacity: 0.8;
+  top: 0;
+}
+
+.overlay-msg {
+  background: #fff;
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 9999;
+  width: 652px;
+  text-align: center;
+  padding: 1% 0;
+}
+
+@media screen and (max-width: 1400px) {
+  .overlay-msg {
+    width: 46%;
+  }
+}
+
+@media screen and (max-width: 414px) {
+  .overlay-msg {
+    width: 88%;
+    padding: 14% 0;
+  }
+}
+
+.overlay-msg h2 {
+  color: #0E395D;
+  font-size: 40px;
+  line-height: 52px;
+}
+
+@media screen and (max-width: 1400px) {
+  .overlay-msg h2 {
+    font-size: 2.9vw;
+    line-height: 3.7vw;
+  }
+}
+
+@media screen and (max-width: 414px) {
+  .overlay-msg h2 {
+    font-size: 30px;
+    line-height: 39px;
+  }
+}
+
+.overlay-msg p {
+  font-size: 26px;
+  line-height: 36.4px;
+}
+
+@media screen and (max-width: 1400px) {
+  .overlay-msg p {
+    font-size: 1.9vw;
+    line-height: 2.7vw;
+  }
+}
+
+@media screen and (max-width: 414px) {
+  .overlay-msg p {
+    font-size: 16px;
+    line-height: 22.4px;
+  }
+}
+
 .wrapper {
   max-width: 1400px;
   margin: 0 auto;
   box-sizing: border-box;
-}
-
-.wrapper * {
-  font-family: Source Sans Pro;
-  color: #333333;
 }
 
 .wrapper header {
@@ -73,6 +148,37 @@ body {
 
 .wrapper .top {
   position: relative;
+  min-height: 840px;
+}
+
+@media screen and (max-width: 1025px) {
+  .wrapper .top {
+    min-height: 614.4px;
+  }
+}
+
+@media screen and (max-width: 769px) {
+  .wrapper .top {
+    min-height: 460.8px;
+  }
+}
+
+@media screen and (max-width: 415px) {
+  .wrapper .top {
+    min-height: 877px;
+  }
+}
+
+@media screen and (max-width: 376px) {
+  .wrapper .top {
+    min-height: 795px;
+  }
+}
+
+@media screen and (max-width: 321px) {
+  .wrapper .top {
+    min-height: 678px;
+  }
 }
 
 @media screen and (max-width: 414px) {
@@ -545,7 +651,6 @@ body {
   margin: 0 0 0 4%;
   width: 96%;
   box-sizing: border-box;
-  font-size: 20px;
 }
 
 @media screen and (max-width: 1400px) {
@@ -592,16 +697,27 @@ body {
   border-radius: 6px;
   border-color: #1C75BB;
   border-style: solid;
+  font-size: 18px;
+}
+
+@media screen and (max-width: 1400px) {
+  .wrapper .the-form form .top-part div input {
+    font-size: 1.3vw;
+  }
 }
 
 @media screen and (max-width: 414px) {
   .wrapper .the-form form .top-part div input {
     padding: 3.3%;
-    width: 92%;
     border-radius: 4px;
     margin: 0;
     font-size: 14px;
+    width: 100%;
   }
+}
+
+.wrapper .the-form form .top-part div input:focus {
+  outline: 0;
 }
 
 .wrapper .the-form form .legal {
@@ -702,6 +818,35 @@ body {
 .wrapper .the-form form .terms p a {
   font-weight: bold;
   color: #1C75BB;
+}
+
+.wrapper .error-input {
+  border-color: #DF2A4A !important;
+  background: url("../img/error-mark.svg") no-repeat 95% 50%;
+}
+
+.wrapper .error-msg {
+  color: #DF2A4A;
+  font-size: 12px !important;
+  line-height: 15.36px;
+  text-align: left;
+  padding: 0 0 0 8%;
+}
+
+@media screen and (max-width: 1400px) {
+  .wrapper .error-msg {
+    font-size: 0.9vw !important;
+    line-height: 1.1vw;
+  }
+}
+
+@media screen and (max-width: 414px) {
+  .wrapper .error-msg {
+    font-size: 10px !important;
+    line-height: 12.8px !important;
+    padding: 0;
+    margin: 2% 0 0 !important;
+  }
 }
 
 .wrapper .faqs {

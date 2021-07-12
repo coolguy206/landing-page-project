@@ -1,5 +1,31 @@
 .top {
   position: relative;
+  min-height: 840px;
+}
+@media screen and (max-width: 1025px) {
+  .top {
+    min-height: 614.4px;
+  }
+}
+@media screen and (max-width: 769px) {
+  .top {
+    min-height: 460.8px;
+  }
+}
+@media screen and (max-width: 415px) {
+  .top {
+    min-height: 877px;
+  }
+}
+@media screen and (max-width: 376px) {
+  .top {
+    min-height: 795px;
+  }
+}
+@media screen and (max-width: 321px) {
+  .top {
+    min-height: 678px;
+  }
 }
 @media screen and (max-width: 414px) {
   .top img[src="img/header-m.png"] {

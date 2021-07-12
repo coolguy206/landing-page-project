@@ -1,3 +1,9 @@
+* {
+  font-family: Source Sans Pro;
+  color: #333333;
+  box-sizing: border-box;
+}
+
 img {
   max-width: 100%;
 }
@@ -6,16 +12,12 @@ body {
   margin: 0;
   padding: 0;
 }
+@import 'overlay.less';
 
 .wrapper {
   max-width: 1400px;
   margin: 0 auto;
   box-sizing: border-box;
-
-  * {
-    font-family: Source Sans Pro;
-    color: #333333;
-  }
   @import 'header.less';
   @import "footer.less";
   @import "top.less";

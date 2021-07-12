@@ -90,7 +90,6 @@
   margin: 0 0 0 4%;
   width: 96%;
   box-sizing: border-box;
-  font-size: 20px;
 }
 @media screen and (max-width: 1400px) {
   .the-form form .top-part div.sky-card input,
@@ -133,15 +132,24 @@
   border-radius: 6px;
   border-color: #1C75BB;
   border-style: solid;
+  font-size: 18px;
+}
+@media screen and (max-width: 1400px) {
+  .the-form form .top-part div input {
+    font-size: 1.3vw;
+  }
 }
 @media screen and (max-width: 414px) {
   .the-form form .top-part div input {
     padding: 3.3%;
-    width: 92%;
     border-radius: 4px;
     margin: 0;
     font-size: 14px;
+    width: 100%;
   }
+}
+.the-form form .top-part div input:focus {
+  outline: 0;
 }
 .the-form form .legal {
   overflow: auto;
@@ -226,4 +234,29 @@
 .the-form form .terms p a {
   font-weight: bold;
   color: #1C75BB;
+}
+.error-input {
+  border-color: #DF2A4A !important;
+  background: url("../img/error-mark.svg") no-repeat 95% 50%;
+}
+.error-msg {
+  color: #DF2A4A;
+  font-size: 12px !important;
+  line-height: 15.36px;
+  text-align: left;
+  padding: 0 0 0 8%;
+}
+@media screen and (max-width: 1400px) {
+  .error-msg {
+    font-size: 0.9vw !important;
+    line-height: 1.1vw;
+  }
+}
+@media screen and (max-width: 414px) {
+  .error-msg {
+    font-size: 10px !important;
+    line-height: 12.8px !important;
+    padding: 0;
+    margin: 2% 0 0 !important;
+  }
 }
