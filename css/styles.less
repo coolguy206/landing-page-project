@@ -2,61 +2,10 @@
   font-family: Source Sans Pro;
   color: #333333;
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 img {
   max-width: 100%;
-}
-
-body {
-  margin: 0;
-  padding: 0;
-}
-@import 'overlay.less';
-
-.wrapper {
-  max-width: 1400px;
-  margin: 0 auto;
-  box-sizing: border-box;
-  @import 'header.less';
-  @import "footer.less";
-  @import "top.less";
-  @import "middle.less";
-  @import "steps.less";
-  @import "the-form.less";
-  @import "faqs.less";
-}
-
-.btn {
-  @media screen and (max-width: 1400px) {
-    font-size: 1.7vw;
-  }
-  @media screen and (max-width: 414px) {
-    width: 41.3%;
-    padding: 3.5% 0 !important;
-    text-align: center;
-    font-size: 18px;
-    line-height: 18px;
-  }
-  text-decoration: none;
-  background: linear-gradient(#38B650, #25A13D);
-  border-radius: 6px;
-  padding: 0.8% 1.7%;
-  color: #fff;
-  text-transform: capitalize;
-  font-size: 24px;
-  font-weight: bold;
-}
-
-.desktop {
-  @media screen and (max-width:414px) {
-    display: none;
-  }
-}
-
-.mobile {
-  @media screen and (max-width: 414px) {
-    display: inline-block;
-  }
-  display: none;
 }
