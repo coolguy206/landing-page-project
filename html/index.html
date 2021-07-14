@@ -7,13 +7,53 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>OpenSky</title>
   <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,400i,600,700" rel="stylesheet" type="text/css">
-  <link href='css/styles.css' rel='stylesheet' />
+  <!--[if (gte mso 9)|(IE)]><!-->
+  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,400i,600,700" rel="stylesheet" type="text/css">
+  <!--<![endif]-->
+  <meta http-equiv="Content-Type" content="text/html charset=UTF-8" />
+  <style>
+    include "../css/styles.css"
+  </style>
 </head>
 
 <body>
+  <table width="100%" border="0" cellpadding="0" cellspacing="0" align="center">
+    <tr>
+      <td align="center">
 
-  <script type="text/javascript" src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-  <script src='js/browserify/scripts.js'></script>
+        <table class="wrapper" width="600" border="0" cellpadding="0" cellspacing="0" align="center">
+          <tr class="desktop">
+            <td style="padding: 22px 6%;">
+              <img src="img/logo-d.png" alt="OpenSky">
+            </td>
+          </tr>
+          <tr class="mobile">
+            <td style="padding: 22px 6%;">
+              <img src="img/logo-m.png" alt="OpenSky">
+            </td>
+          </tr>
+          <tr>
+            <td style="background:url(img/bg-d.png) no-repeat #E9F9FD; vertical-align:top; height: 1044px;">
+              include "top.html"
+              include "benefits.html"
+            </td>
+          </tr>
+          <tr>
+            <td>
+              include "faqs.html"
+            </td>
+          </tr>
+          <tr>
+            <td>
+              include "footer.html"
+            </td>
+          </tr>
+        </table>
+
+      </td>
+    </tr>
+  </table>
+
   <script src="http://localhost:35729/livereload.js"></script>
 </body>
 

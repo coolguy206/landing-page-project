@@ -1,11 +1,88 @@
 * {
-  font-family: Source Sans Pro;
+  font-family: Source Sans Pro, sans-serif;
   color: #333333;
-  box-sizing: border-box;
+  // box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
 
 img {
   max-width: 100%;
+}
+
+.desktop {
+  @media screen and (max-width:414px) {
+    visibility: collapse;
+    display: none;
+  }
+  visibility: visbile;
+}
+
+.mobile {
+  @media screen and (max-width:414px) {
+    visibility: visible;
+  }
+  visibility: collapse;
+}
+@media screen and (max-width:414px) {
+  .wrapper {
+    width: 100% !important;
+  }
+
+  .bg {
+    background: url("img/bg-m.png") no-repeat #E9F9FD !important;
+    height: auto !important;
+    background-size: cover !important;
+  }
+
+  .h1 {
+    font-size: 18px !important;
+    line-height: 21.6px !important;
+    margin: 0 0 20px;
+  }
+
+  .italic-p {
+    font-size: 14px !important;
+    line-height: 19.6px !important;
+  }
+
+  .p {
+    font-size: 14px !important;
+    line-height: 16.8px !important;
+  }
+
+  .green-btn {
+    font-size: 14px !important;
+    line-height: 14px !important;
+  }
+
+  .h2 {
+    font-size: 20px !important;
+    line-height: 24px !important;
+    text-align: center !important;
+  }
+
+  .bullets {
+    font-size: 14px !important;
+    line-height: 18.55px !important;
+  }
+
+  .h3 {
+    font-size: 12px !important;
+    line-height: 16.8px !important;
+  }
+
+  .faqs-p {
+    font-size: 12px !important;
+    line-height: 16.8px !important;
+  }
+
+  .footer-p {
+    font-size: 12px !important;
+    line-height: 15.78px !important;
+  }
+
+  .footer {
+    padding: 5% !important;
+  }
 }
