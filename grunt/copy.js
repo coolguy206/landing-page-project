@@ -1,18 +1,18 @@
 module.exports = function(grunt) {
-    return {
-        // main: {
-        //     expand: true,
-        //     src: 'js/make-pdp.js',
-        //     dest: '',
+  return {
+    html: {
+      expand: true,
+      src: 'index.html',
+      dest: 'upload/',
 
-        // },
+    },
 
-        css: {
-            // expand: true,
-            src: 'css/less/styles.css',
-            dest: 'my-app/src/styles.css',
-        }
+    // css: {
+    //     expand: true,
+    //     src: 'css/less/styles.css',
+    //     dest: 'my-app/src/styles.css',
+    // }
 
-    }
+  }
 
 }

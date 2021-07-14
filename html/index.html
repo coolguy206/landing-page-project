@@ -22,18 +22,15 @@
       <td align="center">
 
         <table class="wrapper" width="600" border="0" cellpadding="0" cellspacing="0" align="center">
-          <tr class="desktop">
-            <td style="padding: 22px 6%;">
-              <img src="img/logo-d.png" alt="OpenSky">
-            </td>
-          </tr>
-          <tr class="mobile">
-            <td style="padding: 22px 6%;">
-              <img src="img/logo-m.png" alt="OpenSky">
-            </td>
-          </tr>
           <tr>
-            <td style="background:url(img/bg-d.png) no-repeat #E9F9FD; vertical-align:top; height: 1044px;">
+            <td style="padding: 22px 6%;">
+              <img class="desktop" src="img/logo-d.png" alt="OpenSky">
+              <img class="mobile" src="img/logo-m.png" alt="OpenSky">
+            </td>
+          </tr>
+
+          <tr>
+            <td background="img/bg-d.png" style="vertical-align:top; height: 1044px; background-repeat:no-repeat; background-image: url('img/bg-d.png'); background-color: #E9F9FD">
               include "top.html"
               include "benefits.html"
             </td>
@@ -54,7 +51,7 @@
     </tr>
   </table>
 
-  <script src="http://localhost:35729/livereload.js"></script>
+
 </body>
 
 </html>

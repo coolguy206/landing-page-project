@@ -21,18 +21,26 @@ img {
 .mobile {
   @media screen and (max-width:414px) {
     visibility: visible;
+    display: block;
   }
   visibility: collapse;
+  display: none;
+}
+
+.bg {
+  @media screen and (max-width:414px) {
+    background-image: url("img/bg-m.png") !important;
+    height: auto !important;
+    background-repeat: no-repeat !important;
+    background-color: #E9F9FD !important;
+  }
+  // background-image: url("img/bg-d.png") !important;
+  // background-repeat: no-repeat !important;
+  // background-color: #E9F9FD !important;
 }
 @media screen and (max-width:414px) {
   .wrapper {
     width: 100% !important;
-  }
-
-  .bg {
-    background: url("img/bg-m.png") no-repeat #E9F9FD !important;
-    height: auto !important;
-    background-size: cover !important;
   }
 
   .h1 {
@@ -47,7 +55,7 @@ img {
   }
 
   .p {
-    font-size: 14px !important;
+    font-size: 12px !important;
     line-height: 16.8px !important;
   }
 
@@ -73,7 +81,7 @@ img {
   }
 
   .faqs-p {
-    font-size: 12px !important;
+    font-size: 11px !important;
     line-height: 16.8px !important;
   }
 
