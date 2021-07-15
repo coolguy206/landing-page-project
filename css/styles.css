@@ -26,6 +26,11 @@ img {
     display: block;
   }
 }
+.bg {
+  background-image: url("img/bg-d.png") !important;
+  background-repeat: no-repeat !important;
+  background-color: #E9F9FD !important;
+}
 @media screen and (max-width: 414px) {
   .bg {
     background-image: url("img/bg-m.png") !important;
