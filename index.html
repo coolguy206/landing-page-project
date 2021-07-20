@@ -18,9 +18,6 @@
       margin: 0;
       padding: 0;
     }
-    img {
-      max-width: 100%;
-    }
     .desktop {
       visibility: visbile;
     }
@@ -40,60 +37,14 @@
         display: block;
       }
     }
-    .bg {
-      background-image: url("img/bg-d.png") !important;
-      background-repeat: no-repeat !important;
-      background-color: #E9F9FD !important;
-    }
-    @media screen and (max-width: 414px) {
-      .bg {
-        background-image: url("img/bg-m.png") !important;
-        height: auto !important;
-        background-repeat: no-repeat !important;
-        background-color: #E9F9FD !important;
-      }
-    }
     @media screen and (max-width: 414px) {
       .wrapper {
         width: 100% !important;
       }
       .h1 {
-        font-size: 17px !important;
+        font-size: 18px !important;
         line-height: 21.6px !important;
         margin: 0 0 20px;
-      }
-      .italic-p {
-        font-size: 14px !important;
-        line-height: 19.6px !important;
-      }
-      .p {
-        font-size: 11px !important;
-        line-height: 16.8px !important;
-      }
-      .green-btn {
-        font-size: 14px !important;
-        line-height: 14px !important;
-      }
-      .h2 {
-        font-size: 20px !important;
-        line-height: 24px !important;
-        text-align: center !important;
-      }
-      .bullets {
-        font-size: 14px !important;
-        line-height: 18.55px !important;
-      }
-      .h3 {
-        font-size: 12px !important;
-        line-height: 16.8px !important;
-      }
-      .faqs-p {
-        font-size: 11px !important;
-        line-height: 16.8px !important;
-      }
-      .footer-p {
-        font-size: 12px !important;
-        line-height: 15.78px !important;
       }
       .footer {
         padding: 5% !important;
@@ -118,87 +69,71 @@
           </tr>
 
           <tr>
-            <td background="img/bg-d.png" style="vertical-align:top; height: 1044px; background-repeat:no-repeat; background-image: url('img/bg-d.png'); background-color: #E9F9FD;">
+            <td style="vertical-align:top; height: 1044px; background-repeat:no-repeat; background-image: url('img/bg.png'); background-color: #4CA4FE; background-position:bottom; background-size:contain;">
               <table width="100%" border="0" cellpadding="0" cellspacing="0" style="padding: 9% 6%;">
 
                 <tr>
                   <td colspan="2">
-                    <h1 class="h1" style="font-size: 23px; line-height: 28.2px; color:#fff;">Congratulations %%First Name%%,<br> Your Smart Credit Management<br class="mobile"> has Earned You<br class="desktop"> the new<br class="mobile"> OpenSky&reg; Visa&reg;
-                      Gold
-                      Credit Card </h1>
+                    <h1 class="h1" style="font-size: 24px; line-height: 28.2px; color:#fff; margin: 0 0 20px;">
+                      Congratulations! Your Smart Credit Management has Earned You a Credit
+                      Line Increase
+                    </h1>
                   </td>
                 </tr>
 
                 <tr>
                   <td>
-                    <p class="italic-p" style="font-size: 18px; font-style: italic; line-height: 25.2px; color:#fff; margin: 0 0 20px;">Pssst, please don’t<br class="mobile"> forward this<br class="desktop"> email -<br class="mobile"> this offer is just for you!
+                    <p class="italic-p" style="font-size: 14px; font-style: italic; line-height: 18.2px; color:#fff;">
+                      Re: Account ending in %%Last4%%
                     </p>
-
-                    <p class="p" style="font-size: 14px;
-                                  line-height: 20.8px; color:#fff; margin:0 0 20px">Re: Your OpenSky card ending in %%Last4%%</p>
-
-                    <p class="p" style="font-size: 14px;
-                    line-height: 20.8px; color:#fff;">%%First Name%%,</p>
                   </td>
-                  <td>
-                    <img src="img/cc-d.png" alt="credit card">
+                  <td style="text-align:center;">
+                    <img class="desktop" src="img/cc-d.png" alt="credit card">
+                    <img class="mobile" src="img/cc-m.png" alt="credit card">
                   </td>
                 </tr>
                 <tr>
                   <td colspan="2">
-                    <p class="p" style="font-size: 14px;
-                                  line-height: 20.8px; color: #fff; margin:10px 0 20px;"><b style="color:#fff;">You are approved for the new OpenSky Visa<br class="mobile"> Gold Credit Card – no deposit,<br class="desktop"> no credit check and no application.</b>
-                      Since you started using the OpenSky Secured Visa Credit Card,
-                      you’ve invested in
-                      taking all the right actions, staying<br> committed to improving your credit.</p>
-
-                    <p class="p" style="font-size: 14px;
-                                    line-height: 20.8px; color: #fff; margin:0 0 20px;">We would like to offer you the new Visa Gold card with a %%CreditLine%% credit line. <b style="color:#fff;">This offer expires %%ExpirationDate%%.</b></p>
-
-                    <p class="p" style="font-size: 14px;
-                                                  line-height: 20.8px; color: #fff; margin:0 0 20px;">Thank you for being a loyal OpenSky customer.</p>
-                  </td>
-                </tr>
-                <tr>
-                  <td colspan="2" style="padding: 20px 0 0;">
-                    <span class="green-btn" style="text-decoration:none; color:#fff; font-size: 13px; line-height:18px; background-color: #38B650; border-radius: 6px; padding: 10px 7%; text-transform: capitalize; font-weight: bold;">
-                      <a href="%%PersonalizedURL%%" style="text-decoration: none; color:#fff;">Learn More About My Gold Card</a>
-                    </span>
-                  </td>
-                </tr>
-              </table>
-              <table width="100%" border="0" cellpadding="0" cellspacing="0" style="padding: 9% 6%; margin: 129px 0 0;">
-                <tr>
-                  <td>
-                    <p class="p" style="font-size: 14px; line-height: 16.8px; margin: 0 0 20px;">The OpenSky Visa Gold Card is a new credit card from OpenSky designed for customers on their journey towards their financial goals.</p>
-
-                    <p class="p" style="font-size: 14px; line-height: 16.8px; margin: 0 0 20px;">As a companion card for your current secured OpenSky Visa you’ll receive an additional %%CreditLine%% of credit each month, building credit faster as your new Visa
-                      Gold card reports as another trade line from OpenSky to all three major credit bureaus.
+                    <p class="p" style="font-size: 14px; line-height: 18.2px; color:#fff; margin:0 0 20px;">
+                      Dear %%First Name%%:
                     </p>
-                  </td>
-                </tr>
 
-                <tr>
-                  <td style="padding: 20px 0 0;">
-                    <span class="green-btn" style="text-decoration:none; color:#fff; font-size: 13px; line-height:18px; background-color: #38B650; border-radius: 6px; padding: 10px 7%; text-transform: capitalize; font-weight: bold;">
-                      <a href="%%PersonalizedURL%%" style="text-decoration: none; color:#fff;">Learn More About My Gold Card</a>
-                    </span>
-                  </td>
-                </tr>
+                    <p class="p" style="font-size: 14px; line-height: 18.2px; color:#fff; margin:0 0 20px;">
+                      Congratulations! We have increased your credit line by $%%CLIPamount%% - <b style="color:#fff;">no additional security deposit, credit check, or application is required.</b>
+                    </p>
 
-                <tr>
-                  <td>
-                    <h2 class="h2" style="font-size: 22px; line-height: 31.8px; color:#1C75BB; margin:40px 0 20px;">Benefits of the OpenSky<br class="mobile"> Visa Gold Card include:</h2>
-                  </td>
-                </tr>
+                    <p class="p" style="font-size: 14px; line-height: 18.2px; color:#fff; margin:0 0 20px;">
+                      Since you started using your OpenSky Secured Visa Credit Card, you've invested in taking the right actions and stayed committed to improving your credit. <b style="color:#fff;">To reward your hard work, your new increased limit is
+                        $%%CreditLine%%.</b>
+                    </p>
 
-                <tr>
-                  <td>
-                    <p class="bullets" style="font-size: 14px; line-height: 18.5px; margin:0 0 20px;">&bull; Build credit faster with a 2nd card reported to all 3 major credit bureaus</p>
+                    <h2 class="h1" style="font-size: 23px; line-height: 28.2px; color:#fff; margin:0 0 20px;">
+                      Benefits of your New Credit Line Increase:
+                    </h2>
 
-                    <p class="bullets" style="font-size: 14px; line-height: 18.5px; margin:0 0 20px;">&bull; Added flexibility and the convenience of the additional credit line</p>
+                    <p class="p" style="font-size: 14px; line-height: 18.2px; color:#fff; margin:0 0 20px;">
+                      &bull; Convenience of a higher credit line
+                    </p>
 
-                    <p class="bullets" style="font-size: 14px; line-height: 18.5px; margin:0 0 20px;">&bull; Convenient to manage all of your OpenSky cards from the OpenSky mobile app</p>
+                    <p class="p" style="font-size: 14px; line-height: 18.2px; color:#fff; margin:0 0 20px;">
+                      &bull; Flexibility to spend more while keeping utilization low
+                    </p>
+
+                    <p class="p" style="font-size: 14px; line-height: 18.2px; color:#fff; margin:0 0 20px;">
+                      &bull; Easily track your spending on the OpenSky&reg; Mobile App
+                    </p>
+                    <p class="p" style="font-size: 14px; line-height: 18.2px; color:#fff; margin:0 0 20px;">
+                      As one of our valued customers, we will continue to review your account on an ongoing basis and consider you for future line increases and additional enhancements.
+                    </p>
+
+                    <p class="p" style="font-size: 14px; line-height: 18.2px; color:#fff; margin:0 0 20px;">
+                      Thank you for being a loyal OpenSky customer.
+                    </p>
+
+                    <p class="p" style="font-size: 14px; line-height: 18.2px; color:#fff;">
+                      Sincerely,<br>The OpenSky Team
+                    </p>
+
                   </td>
                 </tr>
 
@@ -212,35 +147,54 @@
                   <td>
                     <h2 class="h2" style="font-size: 20px;
                     line-height: 24px;
-                     color:#1C75BB; margin:0 0 20px; text-align:center;">FAQs</h2>
+                     color:#1C75BB; margin:0 0 20px; text-align:center;">
+                      Got Any Questions?
+                    </h2>
                   </td>
                 </tr>
                 <tr>
                   <td>
-                    <h3 class="h3" style="font-size:14px; line-height: 19.6px; margin:0 0 10px;">How can I sign up for the OpenSky Gold Card?</h3>
+                    <h3 class="h3" style="font-size:14px; line-height: 19.6px; margin:0 0 10px;">
+                      How does it work? What do I need to do?
+                    </h3>
 
-                    <p class="faqs-p" style="font-size: 11px; line-height:16.8px; margin:0 0 20px;">The OpenSky Gold Card is currently available by invitation to existing OpenSky Secured Card customers only. This email is your invitation.
+                    <p class="faqs-p" style="font-size: 11px; line-height:16.8px; margin:0 0 20px;">
+                      Your credit line has been automatically increased - you do not need to do anything or send in an additional security deposit for this.
                     </p>
 
-                    <h3 class="h3" style="font-size:14px; line-height: 19.6px; margin:0 0 10px;">Am I already approved? What do I need to sign up?</h3>
+                    <h3 class="h3" style="font-size:14px; line-height: 19.6px; margin:0 0 10px;">
+                      When can I start using it?
+                    </h3>
 
-                    <p class="faqs-p" style="font-size: 11px; line-height:16.8px; margin:0 0 20px;">Yes, you are already approved. Clicking the button above will take you to a landing page where we will simply need to verify your personal details – that’s how we
-                      know to send your new Visa Gold Card to you. There is no application.</p>
+                    <p class="faqs-p" style="font-size: 11px; line-height:16.8px; margin:0 0 20px;">
+                      Right away! You can use the increased credit line amount immediately.
+                    </p>
 
-                    <h3 class="h3" style="font-size:14px; line-height: 19.6px; margin:0 0 10px;">Is there a credit check for this card?</h3>
+                    <h3 class="h3" style="font-size:14px; line-height: 19.6px; margin:0 0 10px;">
+                      What if I don't want the credit line increase?
+                    </h3>
 
-                    <p class="faqs-p" style="font-size: 11px; line-height:16.8px; margin:0 0 20px;">No, there is absolutely no credit check when you sign up for the OpenSky Gold Card.</p>
+                    <p class="faqs-p" style="font-size: 11px; line-height:16.8px; margin:0 0 20px;">
+                      You can call Customer Service at 1-800-859-6412 (we are here 24/7) and request to be excluded from the automatic credit line increase program. Please note that this will exclude you from all future credit line increases as well.
+                    </p>
 
-                    <h3 class="h3" style="font-size:14px; line-height: 19.6px; margin:0 0 10px;">Do I need to provide a security deposit?</h3>
+                    <h3 class="h3" style="font-size:14px; line-height: 19.6px; margin:0 0 10px;">
+                      Will this affect my credit score?
+                    </h3>
 
-                    <p class="faqs-p" style="font-size: 11px; line-height:16.8px; margin:0 0 20px;">No, this is not a secured card, and no security deposit is required. You will receive a brand new card with its own credit limit. And it will be reported to all
-                      three major credit bureaus as a separate trade line.</p>
+                    <p class="faqs-p" style="font-size: 11px; line-height:16.8px; margin:0 0 20px;">
+                      Your new credit limit will be reported to the credit bureaus immediately following your next billing statement. Now you can spend more and maintain the same utilization rate. Your credit score is impacted by various factors, including, but
+                      not limited to, the length of your history, the type & amount of your credit lines & your utilization, and your payment history.
+                    </p>
 
-                    <h3 class="h3" style="font-size:14px; line-height: 19.6px; margin:0 0 10px;">Will this affect my credit?</h3>
+                    <h3 class="h3" style="font-size:14px; line-height: 19.6px; margin:0 0 10px;">
+                      Can this change my credit card statement balance?
+                    </h3>
 
-                    <p class="faqs-p" style="font-size: 11px; line-height:16.8px; margin:0 0 20px;">The new Gold Card is the perfect companion to your existing OpenSky Secured Card. It gives you more spending ability and flexibility to manage your expenses, while
-                      continuing to build your credit. Now you can spend more and maintain the same utilization rate. Your credit score is impacted by various factors, including, but not limited to, the length of your history, the type &amp; amount of your credit
-                      lines &amp; your utilization, and your payment history.</p>
+                    <p class="faqs-p" style="font-size: 11px; line-height:16.8px; margin:0 0 20px;">
+                      Your assigned credit line does not impact your balance. Your monthly statement balance is based on beginning balance plus, the total amount of transactions (purchases and cash advances), less any payments and credits plus, any fees and
+                      interest charges.
+                    </p>
                   </td>
                 </tr>
               </table>
@@ -250,13 +204,15 @@
             <td>
               <table width="100%" border="0" cellpadding="0" cellspacing="0" class="footer" style="padding: 3%; background: #F6F6F6;">
                 <tr>
-                  <td colspan="2">
-                    <p class="footer-p" style="font-size:12px; line-height:12.06px; text-align:center; margin: 0 0 20px;">This is an advertisement from OpenSky a division of Capital Bank, N.A.</p>
+                  <td colspan="2" style="text-align:center;">
+                    <p class="footer-p" style="font-size:12px; line-height:16.26px; text-align:center; margin: 0 0 20px;">This is an advertisement from OpenSky a division of Capital Bank, N.A.</p>
 
-                    <p class="footer-p" style="font-size:12px; line-height:12.06px; text-align:center; margin: 0 0 20px;">&copy; Copyright 2021. OpenSky, a division of Capital Bank,<br> N.A. PO Box 9224 Old Bethpage, NY 11804-9224</p>
+                    <p class="footer-p" style="font-size:12px; line-height:16.26px; text-align:center; margin: 0 0 20px;">&copy; Copyright 2021. OpenSky, a division of Capital Bank,<br> N.A. PO Box 9224 Old Bethpage, NY 11804-9224</p>
+
+                    <img src="img/fdic.png" alt="member fdic">
 
                     <p style="text-align:center;">
-                      <a style="font-size:12px; line-height:12.06px; font-weight:bold; color:#1C75BB; margin:40px 0 20px;" href="https://capitalbankmd.com/capital-bank-privacy-policy/">Capital Bank Privacy Policy</a>
+                      <a style="font-size:12px; line-height:16.26px; font-weight:bold; color:#1C75BB; margin:40px 0 20px;" href="https://capitalbankmd.com/capital-bank-privacy-policy/">Capital Bank Privacy Policy</a>
                     </p>
                   </td>
                 </tr>
