@@ -23,17 +23,17 @@ img {
 @media screen and (max-width: 414px) {
   .mobile {
     visibility: visible;
-    display: block;
+    display: inline;
   }
 }
 .bg {
-  background-image: url("img/bg-d.png") !important;
+  background-image: url("http://image.email.openskycc.com/lib/fe9913707565047573/m/2/33fcdb7b-c2ee-4367-92c3-d4431fcec7ba.png") !important;
   background-repeat: no-repeat !important;
   background-color: #E9F9FD !important;
 }
 @media screen and (max-width: 414px) {
   .bg {
-    background-image: url("img/bg-m.png") !important;
+    background-image: url("http://image.email.openskycc.com/lib/fe9913707565047573/m/2/74cf2233-b3cc-4ae1-86ee-2182c33ea446.png") !important;
     height: auto !important;
     background-repeat: no-repeat !important;
     background-color: #E9F9FD !important;
@@ -64,6 +64,9 @@ img {
     font-size: 20px !important;
     line-height: 24px !important;
     text-align: center !important;
+  }
+  .benefits {
+    margin: 38% 0 20px !important;
   }
   .bullets {
     font-size: 14px !important;
