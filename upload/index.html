@@ -55,7 +55,7 @@
 </head>
 
 <body>
-
+  <custom name="opencounter" type="tracking" />
   <table width="100%" border="0" cellpadding="0" cellspacing="0" align="center">
     <tr>
       <td align="center">
@@ -63,13 +63,14 @@
         <table class="wrapper" width="600" border="0" cellpadding="0" cellspacing="0" align="center">
           <tr>
             <td style="padding: 22px 6%;">
-              <img class="desktop" src="img/logo-d.png" alt="OpenSky">
-              <img class="mobile" src="img/logo-m.png" alt="OpenSky">
+              <img class="desktop" src="http://image.email.openskycc.com/lib/fe9913707565047573/m/2/9a31628d-590a-496f-86d6-d145b2428bfe.png" alt="OpenSky">
+              <img class="mobile" src="http://image.email.openskycc.com/lib/fe9913707565047573/m/2/5d28d4b0-6255-4336-a0fb-e188482dc5ec.png" alt="OpenSky">
             </td>
           </tr>
 
           <tr>
-            <td style="vertical-align:top; height: 1044px; background-repeat:no-repeat; background-image: url('img/bg.png'); background-color: #4CA4FE; background-position:bottom; background-size:contain;">
+            <td
+              style="vertical-align:top; height: 1044px; background-repeat:no-repeat; background-image: url('http://image.email.openskycc.com/lib/fe9913707565047573/m/2/e367a86e-9596-4246-abf9-4a5e00c9a7b0.png'); background-color: #4CA4FE; background-position:bottom; background-size:contain;">
               <table width="100%" border="0" cellpadding="0" cellspacing="0" style="padding: 9% 6%;">
 
                 <tr>
@@ -88,8 +89,7 @@
                     </p>
                   </td>
                   <td style="text-align:center; width:50%;">
-                    <img class="desktop" src="img/cc-d.png" alt="credit card">
-                    <img class="mobile" src="img/cc-m.png" alt="credit card">
+                    <img src="http://image.email.openskycc.com/lib/fe9913707565047573/m/2/f77caf7b-ed5c-42a3-829d-136e241f75a5.png" alt="credit card">
                   </td>
                 </tr>
                 <tr>
@@ -209,7 +209,7 @@
 
                     <p class="footer-p" style="font-size:12px; line-height:16.26px; text-align:center; margin: 0 0 20px;">&copy; Copyright 2021. OpenSky, a division of Capital Bank,<br> N.A. PO Box 9224 Old Bethpage, NY 11804-9224</p>
 
-                    <img src="img/fdic.png" alt="member fdic">
+                    <img src="http://image.email.openskycc.com/lib/fe9913707565047573/m/2/70c60b82-d3ea-45d8-9888-c3042512c1a2.png" alt="member fdic">
 
                     <p style="text-align:center;">
                       <a style="font-size:12px; line-height:16.26px; font-weight:bold; color:#1C75BB; margin:40px 0 20px;" href="https://capitalbankmd.com/capital-bank-privacy-policy/">Capital Bank Privacy Policy</a>
@@ -219,13 +219,39 @@
                 <tr>
                   <td style="text-align:right; padding: 20px 4% 0 0;">
                     <a href="https://apps.apple.com/us/app/opensky-mobile/id1416799946">
-                      <img src="img/apple-store-icon.png" alt="apple store">
+                      <img src="http://image.email.openskycc.com/lib/fe9913707565047573/m/2/c35af685-9201-412f-b384-8e057bf6c9d1.png" alt="apple store">
                     </a>
                   </td>
                   <td style="text-align:left; padding: 20px 0 0 4%;">
                     <a href="https://play.google.com/store/apps/details?id=com.openskycc.mobile&hl=en_US&gl=US">
-                      <img src="img/google-play-icon.png" alt="google play">
+                      <img src="http://image.email.openskycc.com/lib/fe9913707565047573/m/2/c35af685-9201-412f-b384-8e057bf6c9d1.png" alt="google play">
                     </a>
+                  </td>
+                </tr>
+              </table>
+
+              <table cellpadding="0" cellspacing="0" width="100%" Border=0 style="margin:4% 0;">
+                <tr>
+                  <td>
+                    <p>This email was sent by: <b>%%Member_Busname%%</b>
+                      <br>%%Member_Addr%% %%Member_City%%, %%Member_State%%, %%Member_PostalCode%%, %%Member_Country%%</p>
+                  </td>
+                </tr>
+              </table>
+
+              <table cellpadding="0" cellspacing="0" width="100%" Border=0 style="margin:4% 0;">
+                <tr>
+                  <td>
+                    <a href="%%profile_center_url%%" alias="Update Profile">Update Profile</a>
+                  </td>
+                  <td>
+                    <a href="%%view_email_url%%">View in browser</a>
+                  </td>
+                  <td>
+                    <a href="%%subscription_center_url%%" alias="Manage Subscriptions">Manage Subscriptions</a>
+                  </td>
+                  <td>
+                    <a href="%%unsub_center_url%%" alias="Unsubscribe">Unsubscribe</a>
                   </td>
                 </tr>
               </table>
